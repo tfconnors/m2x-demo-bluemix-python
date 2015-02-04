@@ -52,3 +52,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+m2x_api_key.txt
+.env
