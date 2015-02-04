@@ -1,0 +1,5 @@
+iso8601==0.1.8
+m2x==3.0.1
+paho-mqtt==1.0
+requests==2.0.1
+ystockquote==0.2.4
