@@ -22,7 +22,7 @@ Finally, you will need the [Cloudfoundry command line interface](https://github.
 #### Creating Your Application
 
 ```bash
-$ git clone https://github.com/sterlzbd/m2x-demo-bluemix-python.git
+$ git clone https://github.com/attm2x/m2x-demo-bluemix-python.git
 $ cd m2x-demo-bluemix-python
 ```
 
