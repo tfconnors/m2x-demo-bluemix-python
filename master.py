@@ -9,7 +9,7 @@ import subprocess
 WORKING_DIR = os.path.dirname(os.path.realpath(__file__))
 
 # This is necessary to get unbuffered output. We want unbuffered output so each line we print gets a
-# timestamp from Heroku at the correct time.
+# timestamp from Bluemix at the correct time.
 class Unbuffered(object):
     def __init__(self, stream):
         self.stream = stream

@@ -9,7 +9,7 @@ import ystockquote
 from m2x.client import M2XClient
 
 # This is necessary to get unbuffered output. We want unbuffered output so each line we print gets a
-# timestamp from Heroku at the correct time. Otherwise all will have the same timestamp when the program exits.
+# timestamp from Bluemix at the correct time. Otherwise all will have the same timestamp when the program exits.
 class Unbuffered(object):
    def __init__(self, stream):
        self.stream = stream
@@ -24,7 +24,7 @@ sys.stderr = Unbuffered(sys.stderr)
 
 
 print("Starting stockreport.py run")
-DEVICE_NAME = "stockreport-heroku"
+DEVICE_NAME = "stockreport-bluemix"
 WORKING_DIR = os.path.dirname(os.path.realpath(__file__))
 
 APIKEY = os.environ['MASTER_API_KEY']
