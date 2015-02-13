@@ -69,6 +69,8 @@ If there are any errors from stockreport.py, they will be logged via Bluemix's l
 
 - [Start coding with Cloud Foundry command line interface](https://www.ng.bluemix.net/docs/#starters/install_cli.html)
 - [CF commands](https://www.ng.bluemix.net/docs/#cli/index.html#cli) 
+- [IBM Bluemix Documentation](https://www.ng.bluemix.net/docs/#)
+- [M2X API Documentation](https://m2x.att.com/developer/documentation/overview)
 
 ## License
 
