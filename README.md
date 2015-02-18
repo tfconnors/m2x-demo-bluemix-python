@@ -1,10 +1,9 @@
-# m2x-demo-bluemix-python
-AT&amp;T M2X IBM Bluemix™ Demo Application
+# M2X IBM Bluemix Python Demo
 
 
 ## Introduction
 
-This repo provides a framework for a IBM Bluemix application with Python code that reports data to AT&T M2X. The application reports the current stock price of AT&T's stock (ticker symbol "T") every minute.
+This repo provides a framework for an [IBM Bluemix](http://www.bluemix.net) application with Python code that reports data to [AT&T M2X](https://m2x.att.com). The application reports the current stock price of AT&T's stock (ticker symbol "T") every minute.
 
 Please note that Bluemix and M2X are using times in UTC, not in your local time zone.
 
@@ -39,7 +38,7 @@ Then login using your IBM ID.
 $ cf login -u <email used as IBM ID>
 $ cf target -o <email used as IBM ID> -s dev
 ```
-Deploy the app, but don't start it yet (you need your M2X Api Master Key first).
+Deploy the app, but don't start it yet (you will need your M2X API Master Key first).
 ```bash
 $ cf push <app name> -m 512m -c "python master.py" --no-route --no-start
 ```
@@ -47,7 +46,7 @@ $ cf push <app name> -m 512m -c "python master.py" --no-route --no-start
 
 #### M2X API Key
 
-To get your M2X API Master Key, log into M2X, and click your name in the upper right-hand corner, then the "Account Settings" dropdown, then the "Master Keys" tab. [Here's a direct link](https://m2x.att.com/account#master-keys). 
+To get your M2X API Master Key, login to M2X, and click your name in the upper right-hand corner, then the "Account Settings" dropdown, then the "Master Keys" tab. [Here's a direct link](https://m2x.att.com/account#master-keys). 
 
 Then you'll need to add your key as an environment variable on your Bluemix instance:
 ```bash
@@ -70,6 +69,8 @@ If there are any errors from stockreport.py, they will be logged via Bluemix's l
 
 - [Start coding with Cloud Foundry command line interface](https://www.ng.bluemix.net/docs/#starters/install_cli.html)
 - [CF commands](https://www.ng.bluemix.net/docs/#cli/index.html#cli) 
+- [IBM Bluemix Documentation](https://www.ng.bluemix.net/docs/#)
+- [M2X API Documentation](https://m2x.att.com/developer/documentation/overview)
 
 ## License
 
