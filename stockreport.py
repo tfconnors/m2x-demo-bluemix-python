@@ -13,19 +13,14 @@ def post_stock_price(symbol, apikey, devicename):
     post it in the correct M2X data stream.
     '''
     client = M2XClient(key=apikey)
-    stockreport_device_exists = False
 
     # Find the correct device if it exists, if not create it.
-    for device in client.devices(q=devicename):
-        if device.name == devicename:
-            stockreport_device_exists = True
-            break
-
-    if not stockreport_device_exists:
-        device = client.create_device(
-            name=devicename,
-            description="Stockreport Example Device",
-            visibility="private")
+    try:
+        device = [d for d in client.devices(q=devicename) if d.name == devicename][0]
+    except IndexError:
+        device = client.create_device(name=devicename,
+                                      description="Stockreport Example Device",
+                                      visibility="private")
 
     # Get the stream if it exists, if not create the stream.
     try:
