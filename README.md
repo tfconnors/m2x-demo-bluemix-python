@@ -5,7 +5,7 @@
 
 This repo provides a framework for an [IBM Bluemix](http://www.bluemix.net) application with Python code that reports data to [AT&T M2X](https://m2x.att.com). The application reports the current stock price of AT&T's stock (ticker symbol "T") every minute.
 
-Please note that Bluemix and M2X are using times in UTC, not in your local time zone.
+Please note that Bluemix and M2X are using times in UTC, not in your local time zone. M2X will, however, accept data in any time zone as long as the timestamp is formatted using ISO8601 (e.g. "2015-02-27T18:14:00.000-03:00").
 
 
 ## Pre-Requisites
