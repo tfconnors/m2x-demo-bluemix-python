@@ -12,7 +12,7 @@ Please note that Bluemix and M2X are using times in UTC, not in your local time 
 
 You will need to have an IBM ID ([sign-up here](https://apps.admin.ibmcloud.com/manage/trial/bluemix.html)). The account you make will be a free trial account that is good for 30 days. If you confirm your account using a credit card, this application will still be free to run because it only needs one instance and less than 512MB of memory.
 
-You will also need a free developer account with AT&amp;T's M2X service ([m2x.att.com](https://m2x.att.com)).
+You will also need an [account on AT&T's M2X service](https://m2x.att.com/signup), which has a free Developer plan and usage based paid plans for higher volumes of data. Check out the [M2X Pricing](https://m2x.att.com/pricing) page for more details.
 
 Finally, you will need the [Cloudfoundry command line interface](https://github.com/cloudfoundry/cli/releases) installed. 
 
